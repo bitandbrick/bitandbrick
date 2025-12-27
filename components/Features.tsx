@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from 'react'
 
 const products = [
   {
-    name: 'CRM (FrappeCRM + ERPNext)',
+    name: 'CRM',
     subtitle: 'Back End',
     description: 'Transform your admissions journey with our "Lead-to-LMS" workflow—seamlessly converting inquiries into enrolled, digitally-enabled students.',
     gradient: 'from-emerald-500 to-teal-500',
@@ -22,7 +22,7 @@ const products = [
     ],
   },
   {
-    name: 'Google Classroom',
+    name: 'LMS',
     subtitle: 'Real-Time Pedagogy',
     description: 'Go beyond basic LMS functionality with our "Real-Time Pedagogy" update—designed specifically for British Curriculum attainment tracking.',
     gradient: 'from-blue-500 to-indigo-500',
@@ -40,7 +40,7 @@ const products = [
     ],
   },
   {
-    name: 'Looker Studio',
+    name: 'Analytics',
     subtitle: 'Predictive Insights',
     description: 'Transform your data into predictive, actionable intelligence with our "Whole Child" analytics approach.',
     gradient: 'from-purple-500 to-pink-500',

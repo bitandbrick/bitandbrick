@@ -3,9 +3,9 @@
 import { useState, useEffect } from 'react'
 
 const products = [
-  { name: 'CRM (FrappeCRM + ERPNext)', description: 'Lead-to-LMS Workflow', href: '#features' },
-  { name: 'Google Classroom', description: 'Real-Time Pedagogy', href: '#features' },
-  { name: 'Looker Studio', description: 'Predictive Insights', href: '#features' },
+  { name: 'CRM', description: 'Lead-to-LMS Workflow', href: '#features' },
+  { name: 'LMS', description: 'Real-Time Pedagogy', href: '#features' },
+  { name: 'Analytics', description: 'Predictive Insights', href: '#features' },
 ]
 
 const solutions = [
