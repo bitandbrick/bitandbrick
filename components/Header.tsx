@@ -58,11 +58,11 @@ export default function Header() {
           <div className="hidden lg:flex items-center space-x-8">
             {/* Products Dropdown */}
             <div
-              className="relative"
+              className="relative group"
               onMouseEnter={() => setActiveDropdown('products')}
               onMouseLeave={() => setActiveDropdown(null)}
             >
-              <button className={`flex items-center space-x-1 font-medium transition-colors ${
+              <button className={`flex items-center space-x-1 font-medium transition-colors py-2 ${
                 isScrolled ? 'text-gray-700 hover:text-primary-500' : 'text-gray-700 hover:text-primary-500'
               }`}>
                 <span>Products</span>
@@ -71,28 +71,30 @@ export default function Header() {
                 </svg>
               </button>
               {activeDropdown === 'products' && (
-                <div className="absolute top-full left-0 mt-2 w-72 bg-white rounded-xl shadow-xl border border-gray-100 py-2 animate-fade-in">
-                  {products.map((item) => (
-                    <a
-                      key={item.name}
-                      href={item.href}
-                      className="flex flex-col px-4 py-3 hover:bg-primary-50 transition-colors"
-                    >
-                      <span className="font-semibold text-gray-900">{item.name}</span>
-                      <span className="text-sm text-gray-500">{item.description}</span>
-                    </a>
-                  ))}
+                <div className="absolute top-full left-0 pt-2 w-72">
+                  <div className="bg-white rounded-xl shadow-xl border border-gray-100 py-2 animate-fade-in">
+                    {products.map((item) => (
+                      <a
+                        key={item.name}
+                        href={item.href}
+                        className="flex flex-col px-4 py-3 hover:bg-primary-50 transition-colors"
+                      >
+                        <span className="font-semibold text-gray-900">{item.name}</span>
+                        <span className="text-sm text-gray-500">{item.description}</span>
+                      </a>
+                    ))}
+                  </div>
                 </div>
               )}
             </div>
 
             {/* Solutions Dropdown */}
             <div
-              className="relative"
+              className="relative group"
               onMouseEnter={() => setActiveDropdown('solutions')}
               onMouseLeave={() => setActiveDropdown(null)}
             >
-              <button className={`flex items-center space-x-1 font-medium transition-colors ${
+              <button className={`flex items-center space-x-1 font-medium transition-colors py-2 ${
                 isScrolled ? 'text-gray-700 hover:text-primary-500' : 'text-gray-700 hover:text-primary-500'
               }`}>
                 <span>Solutions</span>
@@ -101,17 +103,19 @@ export default function Header() {
                 </svg>
               </button>
               {activeDropdown === 'solutions' && (
-                <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-xl border border-gray-100 py-2 animate-fade-in">
-                  {solutions.map((item) => (
-                    <a
-                      key={item.name}
-                      href={item.href}
-                      className="flex flex-col px-4 py-3 hover:bg-primary-50 transition-colors"
-                    >
-                      <span className="font-semibold text-gray-900">{item.name}</span>
-                      <span className="text-sm text-gray-500">{item.description}</span>
-                    </a>
-                  ))}
+                <div className="absolute top-full left-0 pt-2 w-64">
+                  <div className="bg-white rounded-xl shadow-xl border border-gray-100 py-2 animate-fade-in">
+                    {solutions.map((item) => (
+                      <a
+                        key={item.name}
+                        href={item.href}
+                        className="flex flex-col px-4 py-3 hover:bg-primary-50 transition-colors"
+                      >
+                        <span className="font-semibold text-gray-900">{item.name}</span>
+                        <span className="text-sm text-gray-500">{item.description}</span>
+                      </a>
+                    ))}
+                  </div>
                 </div>
               )}
             </div>
