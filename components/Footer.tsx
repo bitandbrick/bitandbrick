@@ -3,7 +3,7 @@
 import { useState } from 'react'
 
 const products = [
-  { name: 'CRM', href: '#features' },
+  { name: 'CRM (FrappeCRM + ERPNext)', href: '#features' },
   { name: 'Google Classroom', href: '#features' },
   { name: 'Looker Studio', href: '#features' },
   { name: 'Parent Portal', href: '#features' },

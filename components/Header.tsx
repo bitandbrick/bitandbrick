@@ -3,9 +3,9 @@
 import { useState, useEffect } from 'react'
 
 const products = [
-  { name: 'CRM', description: 'Customer Relationship Management', href: '#features' },
-  { name: 'Google Classroom', description: 'Learning Management System', href: '#features' },
-  { name: 'Looker Studio', description: 'Data Analytics & Reporting', href: '#features' },
+  { name: 'CRM (FrappeCRM + ERPNext)', description: 'Lead-to-LMS Workflow', href: '#features' },
+  { name: 'Google Classroom', description: 'Real-Time Pedagogy', href: '#features' },
+  { name: 'Looker Studio', description: 'Predictive Insights', href: '#features' },
   { name: 'Parent Portal', description: 'Parent Communication Hub', href: '#features' },
   { name: 'Attendance System', description: 'Automated Tracking', href: '#features' },
   { name: 'Report Cards', description: 'Digital Grade Management', href: '#features' },
