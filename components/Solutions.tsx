@@ -4,8 +4,9 @@ import { useEffect, useRef, useState } from 'react'
 
 const solutions = [
   {
-    name: 'For Schools (K-12)',
-    description: 'Complete school management solution designed for K-12 institutions with parent engagement and comprehensive administrative tools.',
+    name: 'British Curriculum (UK National)',
+    description: 'Designed for schools following the EYFS to A-Level journey, providing deep integration with UK standard benchmarking.',
+    subtitle: 'Key Stages & Attainment Targets',
     gradient: 'from-blue-500 to-cyan-500',
     icon: (
       <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -13,17 +14,16 @@ const solutions = [
       </svg>
     ),
     features: [
-      'Parent Portal with real-time updates',
-      'Attendance Tracking with SMS alerts',
-      'Digital Report Cards generation',
-      'School Bus Management with GPS',
-      'Fee Management & Collection',
-      'Timetable & Scheduling',
+      'GL Assessment Integration: Automate import of PTM/PTE/PTS and CAT4 data',
+      'Key Stage Progress Tracking: Monitor KS1-KS5 using Emerging, Securing, Exceeding',
+      'GCSE & A-Level Predictors: Generate predicted grades for exam board compliance',
+      'Statutory UAE Reporting: KHDA/ADEK Arabic and Islamic Studies frameworks',
     ],
   },
   {
-    name: 'For Universities',
-    description: 'Scalable higher education platform supporting complex academic structures, research management, and multi-campus operations.',
+    name: 'American Curriculum (US Common Core)',
+    description: 'A flexible solution for schools following US State Standards (Common Core/NGSS) with a focus on continuous growth tracking.',
+    subtitle: 'Standards-Based Grading & MAP Growth',
     gradient: 'from-purple-500 to-indigo-500',
     icon: (
       <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -33,17 +33,16 @@ const solutions = [
       </svg>
     ),
     features: [
-      'Multi-campus Management',
-      'Course & Credit System',
-      'Research Portal Integration',
-      'Alumni Network Management',
-      'Placement Cell Module',
-      'Library Management System',
+      'NWEA MAP Testing Integration: Visualize RIT score growth over time',
+      'Standards-Based Gradebook: Map assignments to Common Core strands',
+      'High School Transcript Management: Automated GPA calculation for college apps',
+      'Advanced Placement (AP) Tracking: Monitor performance against College Board standards',
     ],
   },
   {
-    name: 'For Coaching Centers',
-    description: 'Specialized platform for tutoring centers and test preparation institutes with batch management and performance analytics.',
+    name: 'International Baccalaureate (IB)',
+    description: 'A holistic platform built to handle the unique structure of the PYP, MYP, and DP programs.',
+    subtitle: 'Inquiry-Based Learning & Program Mapping',
     gradient: 'from-orange-500 to-red-500',
     icon: (
       <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -51,17 +50,16 @@ const solutions = [
       </svg>
     ),
     features: [
-      'Batch Management System',
-      'Test Series & Mock Exams',
-      'Performance Analytics',
-      'Student Ranking System',
-      'Study Material Distribution',
-      'Doubt Resolution Portal',
+      'Program Mapping (PYP/MYP/DP): Track Transdisciplinary Themes and Subject Groups',
+      'Inquiry & Skill Tracking: Monitor Approaches to Learning (ATL) skills',
+      'DP Core Management: Dedicated modules for CAS, TOK, and Extended Essay',
+      'Criterion-Related Assessment: Specialized gradebook for IB 1-7 scale with rubrics',
     ],
   },
   {
-    name: 'For Training Institutes',
-    description: 'Comprehensive solution for corporate training and vocational institutes with certification tracking and skill assessments.',
+    name: 'Indian Curriculum (CBSE/ICSE)',
+    description: 'Tailored for schools following the NCERT/CBSE framework with a focus on rigorous academic tracking and entrance prep.',
+    subtitle: 'Competitive Benchmarking & Board Excellence',
     gradient: 'from-emerald-500 to-teal-500',
     icon: (
       <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -69,12 +67,10 @@ const solutions = [
       </svg>
     ),
     features: [
-      'Corporate Training Programs',
-      'Certification Management',
-      'Skill Assessment Tools',
-      'Trainer Scheduling',
-      'Progress Tracking',
-      'Compliance & Reporting',
+      'ASSET & Olympiad Integration: Track performance in competitive benchmarking',
+      'CCE & Board Pattern Tracking: Manage CCE and Class 10/12 Board Exam prep',
+      'Subject-Specific Analytics: Deep-dive reporting for Core Sciences and Mathematics',
+      'Automated TC & CBSE Compliance: One-click TC generation and board documentation',
     ],
   },
 ]
@@ -111,11 +107,11 @@ export default function Solutions() {
             Solutions
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold font-sora mb-4">
-            Tailored for Every{' '}
-            <span className="gradient-text">Institution Type</span>
+            Academic Excellence Through{' '}
+            <span className="gradient-text">Specialized Frameworks</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Whether you&apos;re a school, university, coaching center, or training institute, we have the perfect solution for you
+            Whether you follow the British, American, IB, or Indian curriculum, BitandBrick integrates seamlessly with your specific assessment standards and benchmarking requirements.
           </p>
         </div>
 
@@ -138,9 +134,10 @@ export default function Solutions() {
 
                 {/* Content */}
                 <div className="flex-grow">
-                  <h3 className="text-2xl font-bold font-sora text-gray-900 mb-2">
+                  <h3 className="text-2xl font-bold font-sora text-gray-900 mb-1">
                     {solution.name}
                   </h3>
+                  <p className="text-sm font-semibold text-primary-600 mb-3">{solution.subtitle}</p>
                   <p className="text-gray-600 mb-6">{solution.description}</p>
 
                   {/* Features Grid */}

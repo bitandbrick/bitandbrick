@@ -9,10 +9,10 @@ const products = [
 ]
 
 const solutions = [
-  { name: 'For Schools (K-12)', href: '#solutions' },
-  { name: 'For Universities', href: '#solutions' },
-  { name: 'For Coaching Centers', href: '#solutions' },
-  { name: 'For Training Institutes', href: '#solutions' },
+  { name: 'British Curriculum (UK)', href: '#solutions' },
+  { name: 'American Curriculum (US)', href: '#solutions' },
+  { name: 'International Baccalaureate (IB)', href: '#solutions' },
+  { name: 'Indian Curriculum (CBSE/ICSE)', href: '#solutions' },
 ]
 
 const resources = [

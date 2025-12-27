@@ -9,10 +9,10 @@ const products = [
 ]
 
 const solutions = [
-  { name: 'For Schools (K-12)', description: 'Complete school management', href: '#solutions' },
-  { name: 'For Universities', description: 'Higher education solutions', href: '#solutions' },
-  { name: 'For Coaching Centers', description: 'Tutoring & test prep', href: '#solutions' },
-  { name: 'For Training Institutes', description: 'Corporate & vocational', href: '#solutions' },
+  { name: 'British Curriculum', description: 'Key Stages & Attainment Targets', href: '#solutions' },
+  { name: 'American Curriculum', description: 'Standards-Based Grading & MAP', href: '#solutions' },
+  { name: 'International Baccalaureate', description: 'Inquiry-Based Learning', href: '#solutions' },
+  { name: 'Indian Curriculum', description: 'CBSE/ICSE & Board Excellence', href: '#solutions' },
 ]
 
 export default function Header() {
