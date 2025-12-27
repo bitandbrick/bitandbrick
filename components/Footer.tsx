@@ -87,7 +87,7 @@ export default function Footer() {
         <div className="container-custom mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="max-w-2xl mx-auto text-center">
             <h3 className="text-2xl font-bold font-sora mb-4">
-              Stay Updated with BitandBrick
+              Stay Updated with BitandBrick SmartClassroom Portal
             </h3>
             <p className="text-gray-400 mb-6">
               Get the latest updates, tips, and insights for educational technology delivered to your inbox
@@ -121,9 +121,12 @@ export default function Footer() {
               <div className="w-10 h-10 rounded-lg animated-gradient flex items-center justify-center">
                 <span className="text-white font-bold text-xl font-sora">B</span>
               </div>
-              <span className="font-sora font-bold text-xl text-white">
-                Bit<span className="text-primary-400">and</span>Brick
-              </span>
+              <div className="flex flex-col">
+                <span className="font-sora font-bold text-xl text-white">
+                  Bit<span className="text-primary-400">and</span>Brick
+                </span>
+                <span className="text-xs text-gray-400">SmartClassroom Portal</span>
+              </div>
             </a>
             <p className="text-gray-400 text-sm mb-6">
               Empowering educational institutions with comprehensive management solutions since 2020.

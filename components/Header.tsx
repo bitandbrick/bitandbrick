@@ -49,7 +49,7 @@ export default function Header() {
                 <span className="text-white font-bold text-xl font-sora">B</span>
               </div>
               <span className={`font-sora font-bold text-xl ${isScrolled ? 'text-gray-900' : 'text-gray-900'}`}>
-                Bit<span className="text-primary-500">and</span>Brick
+                Bit<span className="text-primary-500">and</span>Brick <span className="text-sm font-normal text-gray-600">SmartClassroom Portal</span>
               </span>
             </a>
           </div>
