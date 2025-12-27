@@ -6,10 +6,6 @@ const products = [
   { name: 'CRM (FrappeCRM + ERPNext)', href: '#features' },
   { name: 'Google Classroom', href: '#features' },
   { name: 'Looker Studio', href: '#features' },
-  { name: 'Parent Portal', href: '#features' },
-  { name: 'Attendance System', href: '#features' },
-  { name: 'Report Cards', href: '#features' },
-  { name: 'Bus Management', href: '#features' },
 ]
 
 const solutions = [

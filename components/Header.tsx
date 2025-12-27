@@ -6,10 +6,6 @@ const products = [
   { name: 'CRM (FrappeCRM + ERPNext)', description: 'Lead-to-LMS Workflow', href: '#features' },
   { name: 'Google Classroom', description: 'Real-Time Pedagogy', href: '#features' },
   { name: 'Looker Studio', description: 'Predictive Insights', href: '#features' },
-  { name: 'Parent Portal', description: 'Parent Communication Hub', href: '#features' },
-  { name: 'Attendance System', description: 'Automated Tracking', href: '#features' },
-  { name: 'Report Cards', description: 'Digital Grade Management', href: '#features' },
-  { name: 'Bus Management', description: 'School Transport Solution', href: '#features' },
 ]
 
 const solutions = [
